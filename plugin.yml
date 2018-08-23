@@ -1,0 +1,8 @@
+name: GamemodeUI
+main: HumGamemodeUI\Main
+author: HumYaiJang
+version: 1.0.0
+api: 3.0.6
+commands:
+ gmui:
+  description: Gamemode UI
