@@ -38,7 +38,8 @@ Class Main extends PluginBase{
               break;
           });
           $form->setTitle("§7§lGamemodeUI");
-          $form->addDropdown("Gamemode", "
+          $form->addDropdown("Gamemode", "Survival", "Creative");
+          $form->sendToPlayer($sender);
       } else {
         $sender->sendMessage("§cYou did not operater or you don't have permission!");
       }
