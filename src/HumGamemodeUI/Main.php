@@ -27,9 +27,17 @@ Class Main extends PluginBase{
           }
           switch($result){
             case 0:
-              $sender->sendMessage("§aChange gamemode to gm 1");
+              $sender->sendMessage($this->prefix . "§aChange gamemode to gm 1");
               $sender->addTitle("§eCreative mode", "§fCreative mode is enable");
-        });
+              $sender->setGamemode(1);
+              break;
+            case 1:
+              $sender->sendMessage($this->prefix . "§aChange gamemode to gm 0");
+              $sender->addTitle("§eSurvival mode", "§fSurvivsl mode is enable");
+              $sender->setGamemode(0);
+              break;
+          });
+          $form->setTitle
       } else {
         $sender->sendMessage("§cYou did not operater or you don't have permission!");
       }
